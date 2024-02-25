@@ -36,7 +36,7 @@ git clone https://github.com/Solenox-Project/Server.git
 Для корректной работы сервера необходимо установить следующие зависимости:
 
 * Java Development Kit (JDK) 8
-* Forge Mod Loader для Minecraft 1.12.2 и соотвествующие модификации к нему
+* Forge Mod Loader для Minecraft 1.12.2
 
 **3. Запуск сервера:**
 
