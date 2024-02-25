@@ -1,5 +1,4 @@
-## Solenox Project Reborn 
-### Server
+## Solenox Project Reborn (Server)
 
 ### ВНИМАНИЕ! ИЗ ДАННОГО РЕПОЗИТОРИЯ УБРАНЫ ПЛАГИНЫ ДЛЯ СЕРВЕРА И ЗАМЕНЕНО ЕГО ЯДРО.
 
