@@ -1,62 +1,53 @@
-Project Name (Replace with your project's name)
+## Solenox Project Reborn
 
-Description
+### ВНИМАНИЕ! ИЗ ДАННОГО РЕПОЗИТОРИЯ УБРАНЫ ПЛАГИНЫ ДЛЯ СЕРВЕРА И ЗАМЕНЕНО ЕГО ЯДРО.
 
-This repository contains the source code for a modded Minecraft server network, providing a unique and engaging experience for players on Minecraft version 1.12.2.
+### Описание
 
-Branches
+Этот репозиторий содержит сборки для клиентов и сервер, обеспечивающий уникальный игровой процесс для игроков на версии 1.12.2.
 
-    master: Stable branch containing the latest tested and approved version of the server.
-    beta: Branch for testing new features and changes before merging to master.
-    bleeding-edge: Branch for ongoing development with the latest experimental code (use with caution).
-    testing: Branch for isolated testing of specific features or bug fixes.
+### Ветви Репозитория
 
-Getting Started
+* **master:** Стабильная ветвь, содержащая последнюю протестированную и пофикшенную сборку.
+* **beta:** Ветка для тестирования новых функций и изменений перед объединением со стабильной веткой.
+* **bleeding-edge:** Ветка для получения свежайших сборок (данная ветка крайне нестабильна).
+* **testing:** Ветка для изолированного тестирования конкретных функций или исправлений ошибок.
 
-    Clone the repository:
-    Bash
+### Процесс Разработки
 
-    git clone https://github.com/<your-username>/<your-repo-name>.git
+* Разработчиком создается эксперементальная сборка и заливается в ветвь bleeding-edge.
+* Если при тестировании ветви bleeding-edge не выявлено критический ошибок, то она объединяется с ветвью testing, где происходит дальнейшее тестирование сборки.
+* После тестирования сборки и устраниения ошибок в сборке, она отправляется в ветвь beta, где происходит автоматическое тестирование и окончательный багфикс.
+* В конечном итоге, сборка попадает в ветвь master и отправляется на сервера обновлений     
 
-    Use code with caution.
+### Приступая к работе
 
-    Install dependencies:
-        Refer to the specific instructions in the dependencies.txt file (if applicable).
-        Common dependencies might include:
-            Java Development Kit (JDK) 8 or later
-            Forge Mod Loader for Minecraft 1.12.2
+**1. Клонирование репозитория:**
 
-    Build the server:
-        Follow the build instructions provided in the build.sh or build.bat file (if present).
-        If no build script exists, you might need to manually compile the code using your preferred IDE or build tools.
+```bash
+git clone https://github.com/<ваш_пользователь>/<название_вашего_репозитория>.git
+```
 
-    Configure the server:
-        Edit the server.properties file to customize server settings like game mode, difficulty, world generation, etc.
-        Consider creating additional configuration files for specific mods if needed.
+**2. Установка зависимостей:**
 
-    Start the server:
-        Run the start.sh or start.bat file (if present).
-        Alternatively, launch the server JAR file using the java command with appropriate arguments.
+Для корректной работы самособранного клиента и сервера необходимо установить следующие зависимости:
 
-Contributing
+* Java Development Kit (JDK) 8
+* Forge Mod Loader для Minecraft 1.12.2
 
-We welcome contributions from the community! To contribute:
+**3. Запуск сервера:**
 
-    Fork the repository.
-    Create a new branch for your changes.
-    Implement your modifications and ensure they adhere to the project's coding style and standards.
-    Write unit tests for your changes (if applicable).
-    Submit a pull request to the appropriate branch (master for stable changes, beta for testing, etc.).
+Запустите файл `start.sh` или `start.bat`. Также можно запустить JAR-файл сервера с помощью команды `java` с соответствующими аргументами.
 
-License
+**4. Настройка сервера под себя:**
 
-This project is licensed under the (Specify your chosen license, e.g., MIT, Apache 2.0). See the LICENSE file for details.
+Отредактируйте файл `server.properties` для настройки параметров сервера, таких как игровой режим, сложность, генерация мира и т. д. При необходимости рассмотрите возможность редактирования конфигов модификаций.
 
-Additional Notes
 
-    Consider including a CONTRIBUTING.md file with more detailed guidelines for contributors.
-    Provide clear instructions on how to report bugs or request features.
-    If your project has complex dependencies or setup requirements, create a dedicated docs folder with more in-depth instructions.
-    Regularly update the README.md to reflect changes in the project, dependencies, or contribution guidelines.
+### Вклад
 
-By following these guidelines and incorporating the valuable feedback from the ratings, you can create a well-structured and informative README.md that effectively guides users and fosters a collaborative development environment for your modded Minecraft project.
+Мы приветствуем участие сообщества! Чтобы внести свой вклад, читайте дальнейшие инструкции в файле `CONTIRUBING.md`
+
+### Лицензия
+
+Этот проект лицензирован под Solenox Project Open Source. Подробнее см. файл `LICENSE`.
